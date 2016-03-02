@@ -1,6 +1,6 @@
 {
   "name": "hyperscript-string-async",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An async/promisified version of hyperscript-string",
   "main": "src/index.js",
   "directories": {
