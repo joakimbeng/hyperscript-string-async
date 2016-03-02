@@ -17,14 +17,28 @@ npm install --save hyperscript-string-async
 ### Module usage
 
 ```javascript
-const hyperscriptStringAsync = require('hyperscript-string-async');
+const h = require('hyperscript-string-async');
 
-// ...
+h('ul.list', [
+	h('li.item', 'Lorem ipsum'),
+	h('li.item', {title: 'Second item'}, 'Dolor sit'),
+	h('li.item', 'Amet')
+])
+.then(html => {
+	/*
+	<ul class="list">
+		<li class="item">Lorem ipsum</li>
+		<li title="Second item" class="item">Dolor sit</li>
+		<li class="item">Amet</li>
+	</ul>
+	*/
+});
 ```
 
 ## Related packages
 
 * [`hyperscript-string`](https://www.npmjs.com/package/hyperscript-string) - Create HTML strings with JavaScript
+* [`hyperscript-normalize-args`](https://www.npmjs.com/package/hyperscript-normalize-args) - A hyperscript helper to normalize component arguments, for easier creation of reusable components
 * [`hyperscript-helpers`](https://www.npmjs.com/package/hyperscript-helpers) - Terse syntax for hyperscript
 * [`hyperscript`](https://www.npmjs.com/package/hyperscript) - Create HyperText with JavaScript, on client or server.
 

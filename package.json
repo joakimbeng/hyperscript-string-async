@@ -45,6 +45,7 @@
   "pj2md": {
     "related": [
       "hyperscript-string",
+      "hyperscript-normalize-args",
       "hyperscript-helpers",
       "hyperscript"
     ]
